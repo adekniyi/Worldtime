@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/time.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/" method="GET">
+        <div class="search">
+            <div class="form">
+                <input name="country" type="text" placeholder="continent">
+                <h2 class="h2">
+               <%= sentence %> <%= state %> is <%= realDate %>
+                </h2>
+             <br>
+                <input name="state" type="text" placeholder="state">
+                <h2 class="h2">
+                    the time in <%= state %> is   <%= realTime %>
+                </h2>
+
+            <br>
+            <input type="submit" value="submit" class="btn btn-primary"></input>
+        </div>
+        </div>
+    </form>
+    <script src="time.js"></script>
+</body>
+
+</html>
