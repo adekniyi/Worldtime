@@ -4,22 +4,10 @@ var bodyParser = require("body-parser");
 var request = require('request');
 app.set('view engine', 'ejs');
 
-// var button = document.querySelector(".button");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// button.addEventListener("click", function() {
-//     var url = 'http://worldtimeapi.org/api/timezone/' + country + '/' + state;
-//     var country = req.query.country;
-//     var state = req.query.state;
-//     request(url, function(error, response, body) {
-//         if (!error && response.statusCode === 200) {
-//             var parsedData = JSON.parse(body);
-//             time.innerHTML = parsedData["datetime"]
-//         }
-//     });
-// })
 var sentence = "the date in"
 
 app.get("/", function(req, res) {
