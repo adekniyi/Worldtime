@@ -33,6 +33,6 @@ app.get("/", function(req, res) {
     });
 });
 
-app.listen(2100, function() {
+app.listen(process.env.PORT ||2100, function() {
     console.log("server started!!!")
 });
